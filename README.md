@@ -1,12 +1,12 @@
 
 
-# Persistence Project: Employee Directory Application
+# Persistence Project: models.Employee Directory Application
 
 In this project you will be creating an employee directory system. You will be able to modify and query the directory and the entries within.
 
 ## Description
 
-You have been assigned to the HR Technology Implementation team and will be building a new corporate directory for your company. The first feature needed by this directory is an API that mobile and web apps can query to get the structure of the company's workforce. All employees in the company will be represented by the same object (Employee), but some of them are managers and some report to managers (you may even have middle managers who manage employees but also report to another manager themselves).
+You have been assigned to the HR Technology Implementation team and will be building a new corporate directory for your company. The first feature needed by this directory is an API that mobile and web apps can query to get the structure of the company's workforce. All employees in the company will be represented by the same object (models.Employee), but some of them are managers and some report to managers (you may even have middle managers who manage employees but also report to another manager themselves).
 
 The company is also organized into different divisions (Departments), each of which must have a department-wide manager. All employees in that department should eventually report up to the department manager, and assigning an employee a new manager should also place that employee within their manager's department.
 
@@ -14,9 +14,9 @@ The company is also organized into different divisions (Departments), each of wh
 
 This application will manage the following entities:
 
-### Employee Entity
+### models.Employee Entity
 
-* Employee number
+* models.Employee number
 * First name
 * Last name
 * Title
@@ -24,13 +24,13 @@ This application will manage the following entities:
 * Email
 * Hire date
 * Manager 
-* Department number(key from Department.dpt_num)
+* models.Department number(key from models.Department.dpt_num)
 
-### Department Entity
+### models.Department Entity
 
-* Department number
-* Department name
-* Department Manager (an employee)
+* models.Department number
+* models.Department name
+* models.Department Manager (an employee)
 
 ## API Endpoints
 
@@ -39,7 +39,7 @@ You should provide a series of API endpoints for interacting with the directory.
 Provide the following endpoints:
 
 - Create employee (Via POST)
-- Create a Department
+- Create a models.Department
 - Update an employee to set their manager
 - Update other employee fields
 - Set a new department manager (Update department)
